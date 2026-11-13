@@ -1,26 +1,135 @@
 {
-  "app": { "name": "Tuition Class", "tagline": "Classes for standards 5 to 10" },
+  "app": {
+    "name": "Tuition Class",
+    "tagline": "Classes for standards 5 to 10"
+  },
   "common": {
-    "language": "Language", "english": "English", "hindi": "हिन्दी", "save": "Save", "cancel": "Cancel",
-    "delete": "Delete", "edit": "Edit", "share": "Share on WhatsApp", "loading": "Loading…",
-    "comingSoon": "This section is coming in the next build step.", "welcome": "Welcome, {name}",
-    "menu": "Menu", "back": "Back"
+    "language": "Language",
+    "english": "English",
+    "hindi": "हिन्दी",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "share": "Share on WhatsApp",
+    "loading": "Loading…",
+    "comingSoon": "This section is coming in the next build step.",
+    "welcome": "Welcome, {name}",
+    "menu": "Menu",
+    "back": "Back",
+    "add": "Add",
+    "update": "Update",
+    "saving": "Saving…",
+    "saved": "Saved.",
+    "actions": "Actions",
+    "none": "Nothing here yet.",
+    "confirmDelete": "Delete this? This can't be undone.",
+    "active": "Active",
+    "inactive": "Inactive",
+    "status": "Status",
+    "all": "All",
+    "filter": "Filter",
+    "cancelEdit": "Cancel editing"
   },
   "nav": {
-    "home": "Home", "homework": "Homework", "materials": "Materials", "quizzes": "Quizzes", "more": "More",
-    "fees": "Fees", "parentSummary": "Parent summary", "profile": "Profile", "dashboard": "Dashboard",
-    "students": "Students", "batches": "Batches", "subjects": "Subjects", "announcements": "Announcements",
-    "enquiries": "Enquiries", "audit": "Audit log", "settings": "Settings"
+    "home": "Home",
+    "homework": "Homework",
+    "materials": "Materials",
+    "quizzes": "Quizzes",
+    "more": "More",
+    "fees": "Fees",
+    "parentSummary": "Parent summary",
+    "profile": "Profile",
+    "dashboard": "Dashboard",
+    "students": "Students",
+    "batches": "Batches",
+    "subjects": "Subjects",
+    "announcements": "Announcements",
+    "enquiries": "Enquiries",
+    "audit": "Audit log",
+    "settings": "Settings"
   },
-  "roles": { "admin": "Teacher (admin)", "co_teacher": "Co-teacher", "student": "Student" },
+  "roles": {
+    "admin": "Teacher (admin)",
+    "co_teacher": "Co-teacher",
+    "student": "Student"
+  },
   "auth": {
-    "title": "Sign in", "subtitle": "Students and parents: use your phone number. Teachers: use your username.",
-    "identifier": "Phone number or username", "password": "Password", "signIn": "Sign in",
-    "signingIn": "Signing in…", "invalid": "Wrong phone number, username or password.",
+    "title": "Sign in",
+    "subtitle": "Students and parents: use your phone number. Teachers: use your username.",
+    "identifier": "Phone number or username",
+    "password": "Password",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "invalid": "Wrong phone number, username or password.",
     "noStudent": "This account isn't linked to an active student. Please contact your teacher.",
-    "required": "Please fill in both fields.", "forgot": "Forgot your password? Ask your teacher to reset it.",
+    "required": "Please fill in both fields.",
+    "forgot": "Forgot your password? Ask your teacher to reset it.",
     "logout": "Sign out"
   },
-  "profile": { "title": "Profile", "languageHelp": "Choose the language for the app.", "batch": "Batch", "parentPhone": "Parent phone" },
-  "student": { "inactive": "Your account isn't active right now. Please contact your teacher." }
+  "profile": {
+    "title": "Profile",
+    "languageHelp": "Choose the language for the app.",
+    "batch": "Batch",
+    "parentPhone": "Parent phone"
+  },
+  "student": {
+    "inactive": "Your account isn't active right now. Please contact your teacher."
+  },
+  "validation": {
+    "required": "This field is required.",
+    "tooLong": "This is too long.",
+    "phone": "Enter a valid 10-digit mobile number.",
+    "password": "Password must be 8 to 72 characters.",
+    "standard": "Standard must be between 5 and 10.",
+    "amount": "Enter a valid amount.",
+    "invalid": "This value isn't valid.",
+    "fix": "Please fix the fields below."
+  },
+  "errors": {
+    "duplicate": "This already exists.",
+    "inUse": "This is still in use, so it can't be deleted.",
+    "forbidden": "You don't have permission to do this.",
+    "generic": "Something went wrong. Please try again.",
+    "phoneTaken": "An account with this phone number already exists.",
+    "notFound": "Not found."
+  },
+  "admin": {
+    "batches": {
+      "description": "One batch per standard.",
+      "name": "Batch name",
+      "standard": "Standard",
+      "students": "Students",
+      "new": "New batch",
+      "edit": "Edit batch"
+    },
+    "subjects": {
+      "description": "Subjects taught in each batch.",
+      "name": "Subject name",
+      "batch": "Batch",
+      "new": "New subject",
+      "edit": "Edit subject",
+      "deleteWarn": "Delete this subject? Its homework, materials and quizzes will also be deleted.",
+      "needBatch": "Create a batch first."
+    },
+    "students": {
+      "description": "Student accounts. Students and parents sign in with the login phone.",
+      "fullName": "Full name",
+      "phone": "Login phone",
+      "parentPhone": "Parent phone",
+      "batch": "Batch",
+      "monthlyFee": "Monthly fee (₹)",
+      "password": "Initial password",
+      "passwordHelp": "Share this with the parent. They can't change it themselves; you can reset it here.",
+      "newPassword": "New password",
+      "resetPassword": "Reset password",
+      "passwordReset": "Password updated. Share the new one with the parent.",
+      "isActive": "Active (can sign in)",
+      "remove": "Remove",
+      "removeWarn": "Remove this student? They won't be able to sign in. Their fee and quiz records are kept.",
+      "new": "New student",
+      "edit": "Edit student",
+      "phoneLocked": "The login phone can't be changed. Remove and re-add the student if it's wrong."
+    }
+  }
 }
