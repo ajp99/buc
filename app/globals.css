@@ -85,11 +85,9 @@
   * {
     @apply border-border outline-ring/50;
   }
+  /* font-sans lives on body: the next/font variables are set on <body>. */
   body {
-    @apply bg-background text-foreground;
-  }
-  html {
-    @apply font-sans;
+    @apply bg-background font-sans text-foreground;
   }
 }
 

@@ -1,4 +1,26 @@
 {
-  "app": { "name": "Tuition Class" },
-  "common": { "language": "Language", "english": "English", "hindi": "हिन्दी", "save": "Save", "cancel": "Cancel", "delete": "Delete", "edit": "Edit", "share": "Share on WhatsApp", "loading": "Loading…" }
+  "app": { "name": "Tuition Class", "tagline": "Classes for standards 5 to 10" },
+  "common": {
+    "language": "Language", "english": "English", "hindi": "हिन्दी", "save": "Save", "cancel": "Cancel",
+    "delete": "Delete", "edit": "Edit", "share": "Share on WhatsApp", "loading": "Loading…",
+    "comingSoon": "This section is coming in the next build step.", "welcome": "Welcome, {name}",
+    "menu": "Menu", "back": "Back"
+  },
+  "nav": {
+    "home": "Home", "homework": "Homework", "materials": "Materials", "quizzes": "Quizzes", "more": "More",
+    "fees": "Fees", "parentSummary": "Parent summary", "profile": "Profile", "dashboard": "Dashboard",
+    "students": "Students", "batches": "Batches", "subjects": "Subjects", "announcements": "Announcements",
+    "enquiries": "Enquiries", "audit": "Audit log", "settings": "Settings"
+  },
+  "roles": { "admin": "Teacher (admin)", "co_teacher": "Co-teacher", "student": "Student" },
+  "auth": {
+    "title": "Sign in", "subtitle": "Students and parents: use your phone number. Teachers: use your username.",
+    "identifier": "Phone number or username", "password": "Password", "signIn": "Sign in",
+    "signingIn": "Signing in…", "invalid": "Wrong phone number, username or password.",
+    "noStudent": "This account isn't linked to an active student. Please contact your teacher.",
+    "required": "Please fill in both fields.", "forgot": "Forgot your password? Ask your teacher to reset it.",
+    "logout": "Sign out"
+  },
+  "profile": { "title": "Profile", "languageHelp": "Choose the language for the app.", "batch": "Batch", "parentPhone": "Parent phone" },
+  "student": { "inactive": "Your account isn't active right now. Please contact your teacher." }
 }

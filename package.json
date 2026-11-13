@@ -10,7 +10,10 @@
     "typecheck": "tsc --noEmit",
     "test": "node scripts/vitest.mjs run",
     "seed:admin": "node scripts/seed-admin.mjs",
-    "test:db": "supabase test db"
+    "test:db": "supabase test db",
+    "db:types": "supabase gen types typescript --local --schema public > lib/supabase/database.types.ts",
+    "seed:dev": "node scripts/seed-dev.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
@@ -29,6 +32,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.65.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^24.19.2",
     "@types/react": "^19",
