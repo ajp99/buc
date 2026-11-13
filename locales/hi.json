@@ -13,7 +13,6 @@
     "edit": "संपादित करें",
     "share": "व्हाट्सऐप पर शेयर करें",
     "loading": "लोड हो रहा है…",
-    "comingSoon": "यह भाग अगले चरण में आ रहा है।",
     "welcome": "नमस्ते, {name}",
     "menu": "मेनू",
     "back": "वापस",
@@ -314,5 +313,62 @@
     "none": "यहाँ कोई पूछताछ नहीं है।",
     "received": "{date} को मिली",
     "replyText": "नमस्ते {name}, कक्षा {standard} की ट्यूशन के बारे में पूछताछ के लिए धन्यवाद।"
+  },
+  "summary": {
+    "subtitle": "{name} ({batch}) के अभिभावकों के लिए एक नज़र में जानकारी।",
+    "homework": "जमा करने वाला होमवर्क",
+    "quizzes": "हाल के क्विज़ परिणाम",
+    "noQuizzes": "अभी कोई क्विज़ नहीं दिया।",
+    "fees": "फीस",
+    "allPaid": "सारी फीस जमा है। धन्यवाद!",
+    "unpaid": "{count} बकाया ({amount})",
+    "announcements": "हाल की सूचनाएँ",
+    "print": "सारांश प्रिंट करें",
+    "missedQuizzes": "पिछले 30 दिनों में {count} क्विज़ छूटे"
+  },
+  "dashboard": {
+    "activeStudents": "सक्रिय विद्यार्थी",
+    "newEnquiries": "नई पूछताछ",
+    "unpaidThisMonth": "बकाया फीस ({month})",
+    "openQuizzes": "अभी खुले क्विज़",
+    "dueThisWeek": "इस हफ़्ते का होमवर्क",
+    "quickActions": "जल्दी करें",
+    "postAnnouncement": "सूचना पोस्ट करें",
+    "addHomework": "होमवर्क जोड़ें",
+    "newQuiz": "क्विज़ बनाएँ",
+    "collectFees": "फीस लें",
+    "backupReminder": "हर हफ़्ते: Supabase डैशबोर्ड से अपना डेटा एक्सपोर्ट करके Google Drive में सहेजें।",
+    "recentActivity": "हाल की गतिविधि",
+    "viewAll": "सब देखें"
+  },
+  "audit": {
+    "description": "शिक्षक और सह-शिक्षक द्वारा किया गया हर बदलाव।",
+    "when": "कब",
+    "who": "किसने",
+    "what": "क्या",
+    "details": "विवरण",
+    "action": {
+      "create": "बनाया",
+      "update": "बदला",
+      "delete": "हटाया"
+    },
+    "newer": "नए",
+    "older": "पुराने",
+    "none": "अभी कोई गतिविधि नहीं।",
+    "allEntities": "सब कुछ",
+    "entity": {
+      "student": "विद्यार्थी",
+      "batch": "बैच",
+      "subject": "विषय",
+      "announcement": "सूचना",
+      "homework": "होमवर्क",
+      "material": "सामग्री",
+      "quiz": "क्विज़",
+      "quiz_question": "क्विज़ प्रश्न",
+      "quiz_attempt": "क्विज़ प्रयास",
+      "fee": "फीस",
+      "fees": "मासिक फीस",
+      "enquiry": "पूछताछ"
+    }
   }
 }

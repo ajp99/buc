@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Noto_Sans_Devanagari } from "next/font/google";
+import { Geist, Noto_Sans_Devanagari } from "next/font/google";
 import { I18nProvider } from "@/components/i18n-provider";
 import { getLang } from "@/lib/i18n-server";
 import "./globals.css";
@@ -9,14 +9,11 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
+// Not preloaded: unicode-range means it only downloads when Hindi text is shown.
 const devanagari = Noto_Sans_Devanagari({
   variable: "--font-devanagari",
   subsets: ["devanagari"],
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -33,7 +30,7 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${devanagari.variable} antialiased`}
+        className={`${geistSans.variable} ${devanagari.variable} antialiased`}
       >
         <I18nProvider lang={lang}>{children}</I18nProvider>
       </body>

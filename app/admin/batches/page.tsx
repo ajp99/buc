@@ -80,7 +80,7 @@ export default async function BatchesPage({ searchParams }: { searchParams: Prom
                 <Input id="standard" name="standard" type="number" min={5} max={10} inputMode="numeric" defaultValue={editing?.standard} required />
               </Field>
               <Field name="name" label={t("admin.batches.name")}>
-                <Input id="name" name="name" defaultValue={editing?.name} placeholder="Standard 6" required />
+                <Input id="name" name="name" defaultValue={editing?.name} placeholder={t("enquiry.std", { n: 6 })} required />
               </Field>
             </ActionForm>
             {editing && (

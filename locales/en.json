@@ -13,7 +13,6 @@
     "edit": "Edit",
     "share": "Share on WhatsApp",
     "loading": "Loading…",
-    "comingSoon": "This section is coming in the next build step.",
     "welcome": "Welcome, {name}",
     "menu": "Menu",
     "back": "Back",
@@ -314,5 +313,62 @@
     "none": "No enquiries here.",
     "received": "Received {date}",
     "replyText": "Hello {name}, thank you for your enquiry about standard {standard} tuition."
+  },
+  "summary": {
+    "subtitle": "A quick overview for parents of {name} ({batch}).",
+    "homework": "Homework due",
+    "quizzes": "Recent quiz results",
+    "noQuizzes": "No quizzes taken yet.",
+    "fees": "Fees",
+    "allPaid": "All fees are paid. Thank you!",
+    "unpaid": "{count} unpaid ({amount})",
+    "announcements": "Recent announcements",
+    "print": "Print summary",
+    "missedQuizzes": "{count} quizzes missed in the last 30 days"
+  },
+  "dashboard": {
+    "activeStudents": "Active students",
+    "newEnquiries": "New enquiries",
+    "unpaidThisMonth": "Unpaid fees ({month})",
+    "openQuizzes": "Quizzes open now",
+    "dueThisWeek": "Homework due this week",
+    "quickActions": "Quick actions",
+    "postAnnouncement": "Post announcement",
+    "addHomework": "Add homework",
+    "newQuiz": "Create quiz",
+    "collectFees": "Collect fees",
+    "backupReminder": "Weekly: export your data from the Supabase dashboard and save it to Google Drive.",
+    "recentActivity": "Recent activity",
+    "viewAll": "View all"
+  },
+  "audit": {
+    "description": "Every change made by the teacher and co-teacher.",
+    "when": "When",
+    "who": "Who",
+    "what": "What",
+    "details": "Details",
+    "action": {
+      "create": "created",
+      "update": "updated",
+      "delete": "deleted"
+    },
+    "newer": "Newer",
+    "older": "Older",
+    "none": "No activity yet.",
+    "allEntities": "Everything",
+    "entity": {
+      "student": "student",
+      "batch": "batch",
+      "subject": "subject",
+      "announcement": "announcement",
+      "homework": "homework",
+      "material": "material",
+      "quiz": "quiz",
+      "quiz_question": "quiz question",
+      "quiz_attempt": "quiz attempt",
+      "fee": "fee",
+      "fees": "monthly fees",
+      "enquiry": "enquiry"
+    }
   }
 }
