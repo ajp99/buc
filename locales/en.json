@@ -1,0 +1,4 @@
+{
+  "app": { "name": "Tuition Class" },
+  "common": { "language": "Language", "english": "English", "hindi": "हिन्दी", "save": "Save", "cancel": "Cancel", "delete": "Delete", "edit": "Edit", "share": "Share on WhatsApp", "loading": "Loading…" }
+}
