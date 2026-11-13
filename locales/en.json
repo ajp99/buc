@@ -275,5 +275,44 @@
     "signature": "Teacher's signature",
     "receiptUnpaid": "This fee hasn't been paid yet, so there is no receipt.",
     "due": "Due"
+  },
+  "public": {
+    "heroTitle": "Small batches. Personal attention.",
+    "heroText": "Tuition for standards 5 to 10, with one batch per standard so every student gets attention.",
+    "enquire": "Admission enquiry",
+    "studentLogin": "Student / parent sign in",
+    "featuresTitle": "What parents and students get",
+    "f1Title": "Homework and notices",
+    "f1Text": "See homework, due dates and class announcements on your phone.",
+    "f2Title": "Study material",
+    "f2Text": "Notes and worksheets for your batch in one place.",
+    "f3Title": "Quizzes with instant results",
+    "f3Text": "Short online tests, marked automatically, with correct answers shown.",
+    "f4Title": "Fee records and receipts",
+    "f4Text": "Check what's paid and download receipts any time.",
+    "standards": "Standards"
+  },
+  "enquiry": {
+    "title": "Admission enquiry",
+    "subtitle": "Leave your details and the teacher will call you back.",
+    "name": "Parent or student name",
+    "phone": "Mobile number",
+    "standard": "Standard",
+    "message": "Message (optional)",
+    "submit": "Send enquiry",
+    "thanks": "Thank you! We'll call you soon.",
+    "chooseStandard": "Choose standard",
+    "std": "Standard {n}",
+    "status": {
+      "new": "New",
+      "contacted": "Contacted",
+      "closed": "Closed"
+    },
+    "markAs": "Mark {status}",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "none": "No enquiries here.",
+    "received": "Received {date}",
+    "replyText": "Hello {name}, thank you for your enquiry about standard {standard} tuition."
   }
 }
