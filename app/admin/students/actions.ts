@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { logAudit } from "@/lib/audit";
-import { studentEmail } from "@/lib/auth/identity";
+import { STUDENT_EMAIL_DOMAIN, studentEmail } from "@/lib/auth/identity";
 import { requireRole } from "@/lib/auth/session";
 import { fromDb, fromZod, type ActionState } from "@/lib/actions/result";
 import { createAdminClient } from "@/lib/supabase/admin";
@@ -75,15 +75,30 @@ export async function resetStudentPassword(id: string, _prev: ActionState, formD
   return { ok: true };
 }
 
-/** Soft delete: the student can no longer sign in, but fees and quiz history stay. */
+/**
+ * Soft delete: fees and quiz history stay, but the login is renamed and banned
+ * so the student can't sign in and the phone number is free to reuse.
+ */
 export async function removeStudent(id: string): Promise<ActionState> {
   const user = await requireRole("admin");
   const supabase = await createClient();
-  const { error } = await supabase
+  const { data: student, error } = await supabase
     .from("students")
     .update({ is_active: false, deleted_at: new Date().toISOString() })
-    .eq("id", id);
+    .eq("id", id)
+    .select("user_id")
+    .single();
   if (error) return fromDb(error);
+
+  const { error: authError } = await createAdminClient().auth.admin.updateUserById(student.user_id, {
+    email: `removed-${id}@${STUDENT_EMAIL_DOMAIN}`,
+    email_confirm: true,
+    ban_duration: "876000h",
+  });
+  if (authError) {
+    console.error("removeStudent: auth update failed", authError);
+    return { error: "errors.generic" };
+  }
 
   await logAudit(supabase, user.id, { action: "delete", entity: "student", entityId: id });
   revalidatePath("/admin/students");

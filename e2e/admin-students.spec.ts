@@ -46,5 +46,20 @@ test("admin creates a student who can sign in, then removes them", async ({ page
   await logout(page);
 
   await login(page, phone, "student-pass");
-  await expect(page.getByText("This account isn't linked to an active student.")).toBeVisible();
+  await expect(page.getByText("Wrong phone number, username or password.")).toBeVisible();
+
+  // The phone is free again: the same number can be re-added.
+  await login(page, "admin", adminPassword());
+  await expect(page).toHaveURL(/\/admin$/);
+  await page.goto("/admin/students");
+  await page.getByLabel("Full name").fill(name);
+  await page.getByLabel("Login phone").fill(phone);
+  await page.getByLabel("Parent phone").fill(phone);
+  await page.getByLabel("Batch").selectOption({ label: "Standard 9" });
+  await page.getByLabel("Initial password").fill("student-pass-2");
+  await page.getByRole("button", { name: "Add" }).click();
+  await expect(page.getByRole("cell", { name })).toBeVisible();
+  page.once("dialog", (d) => d.accept());
+  await page.getByRole("row", { name: new RegExp(name) }).getByRole("button", { name: "Remove" }).click();
+  await expect(page.getByRole("cell", { name })).toHaveCount(0);
 });

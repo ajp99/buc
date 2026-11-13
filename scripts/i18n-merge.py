@@ -1,8 +1,12 @@
 # Merge a {"key.path": [en, hi]} JSON file into locales/en.json and locales/hi.json.
-#   python scripts/i18n-merge.py <additions.json>
+#   python scripts/i18n-merge.py <additions.json | ->   ("-" reads stdin)
 import json, sys
 
-adds = json.load(open(sys.argv[1], encoding="utf-8"))
+if sys.argv[1] == "-":
+    sys.stdin.reconfigure(encoding="utf-8")
+    adds = json.load(sys.stdin)
+else:
+    adds = json.load(open(sys.argv[1], encoding="utf-8"))
 for idx, lang in enumerate(["en", "hi"]):
     path = f"locales/{lang}.json"
     data = json.load(open(path, encoding="utf-8"))

@@ -126,7 +126,7 @@
       "passwordReset": "Password updated. Share the new one with the parent.",
       "isActive": "Active (can sign in)",
       "remove": "Remove",
-      "removeWarn": "Remove this student? They won't be able to sign in. Their fee and quiz records are kept.",
+      "removeWarn": "Remove this student? They won't be able to sign in and their phone number can be reused. Their fee and quiz records are kept.",
       "new": "New student",
       "edit": "Edit student",
       "phoneLocked": "The login phone can't be changed. Remove and re-add the student if it's wrong."
