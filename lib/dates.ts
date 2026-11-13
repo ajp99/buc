@@ -37,3 +37,17 @@ export function formatDateTime(iso: string, lang: Lang): string {
     timeZone: TZ,
   }).format(new Date(iso));
 }
+
+const IST_OFFSET_MS = 330 * 60 * 1000;
+
+/** A <input type="datetime-local"> value, read as India time, to an ISO timestamp. */
+export function istInputToIso(value: string): string | null {
+  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(value)) return null;
+  const ms = Date.parse(`${value}:00Z`);
+  return Number.isNaN(ms) ? null : new Date(ms - IST_OFFSET_MS).toISOString();
+}
+
+/** An ISO timestamp to a datetime-local value in India time. */
+export function isoToIstInput(iso: string): string {
+  return new Date(Date.parse(iso) + IST_OFFSET_MS).toISOString().slice(0, 16);
+}
