@@ -1,5 +1,6 @@
-import { ComingSoon } from "@/components/coming-soon";
+import { MaterialsManager } from "@/components/materials-manager";
 
-export default function Page() {
-  return <ComingSoon titleKey="nav.materials" />;
+export default async function Page({ searchParams }: { searchParams: Promise<{ edit?: string; batch?: string }> }) {
+  const { edit, batch } = await searchParams;
+  return <MaterialsManager basePath="/staff/materials" edit={edit} batch={batch} />;
 }

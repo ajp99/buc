@@ -84,7 +84,9 @@
     "standard": "Standard must be between 5 and 10.",
     "amount": "Enter a valid amount.",
     "invalid": "This value isn't valid.",
-    "fix": "Please fix the fields below."
+    "fix": "Please fix the fields below.",
+    "date": "Pick a valid date.",
+    "url": "Enter a full link starting with https://"
   },
   "errors": {
     "duplicate": "This already exists.",
@@ -131,5 +133,50 @@
       "edit": "Edit student",
       "phoneLocked": "The login phone can't be changed. Remove and re-add the student if it's wrong."
     }
+  },
+  "content": {
+    "allBatches": "All batches",
+    "batchSubject": "Batch and subject",
+    "needSubject": "Add a subject first.",
+    "title": "Title",
+    "postedOn": "Posted {date}"
+  },
+  "announcements": {
+    "body": "Message",
+    "target": "Send to",
+    "new": "New announcement",
+    "edit": "Edit announcement",
+    "latest": "What's new",
+    "none": "No announcements yet."
+  },
+  "homework": {
+    "description": "Details",
+    "dueDate": "Due date",
+    "due": "Due {date}",
+    "overdue": "Overdue",
+    "dueToday": "Due today",
+    "new": "New homework",
+    "edit": "Edit homework",
+    "thisWeek": "What's due this week",
+    "noneThisWeek": "Nothing due this week.",
+    "none": "No homework right now.",
+    "upcoming": "Upcoming",
+    "recentPast": "Overdue (last 2 weeks)",
+    "viewAll": "See all homework",
+    "share": "Homework ({subject}): {title}\nDue: {date}"
+  },
+  "materials": {
+    "type": "Type",
+    "url": "Link (Google Drive or other https link)",
+    "urlHelp": "In Drive, set sharing to \"Anyone with the link\" so students can open it.",
+    "pdf": "PDF",
+    "image": "Image",
+    "link": "Link",
+    "open": "Open",
+    "new": "New material",
+    "edit": "Edit material",
+    "none": "No study material yet.",
+    "staffHome": "You can add and update study material for every batch.",
+    "manage": "Manage materials"
   }
 }
