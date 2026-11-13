@@ -240,5 +240,40 @@
       "quiz_closed": "This quiz is closed.",
       "quiz_not_found": "Quiz not found."
     }
+  },
+  "fees": {
+    "month": "Month",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "generate": "Generate fees for {month}",
+    "generateHelp": "Creates an unpaid fee for every active student using their monthly fee. Students who already have one for this month are skipped.",
+    "generated": "Created {count} fee entries.",
+    "amount": "Amount",
+    "status": {
+      "paid": "Paid",
+      "unpaid": "Unpaid"
+    },
+    "paidOn": "Paid on {date}",
+    "receiptNo": "Receipt no.",
+    "markPaid": "Mark paid",
+    "markUnpaid": "Mark unpaid",
+    "markUnpaidWarn": "Mark this fee as unpaid? The receipt number is kept and reused if it's marked paid again.",
+    "receipt": "Receipt",
+    "viewReceipt": "View receipt",
+    "print": "Print / Save as PDF",
+    "total": "Total",
+    "collected": "Collected",
+    "pending": "Pending",
+    "noneForMonth": "No fees for this month yet. Use the button above to create them.",
+    "none": "No fee records yet.",
+    "saveAmount": "Save",
+    "receiptTitle": "Fee receipt",
+    "receivedFrom": "Received from",
+    "forMonth": "For the month of",
+    "date": "Date",
+    "thanks": "Received with thanks.",
+    "signature": "Teacher's signature",
+    "receiptUnpaid": "This fee hasn't been paid yet, so there is no receipt.",
+    "due": "Due"
   }
 }

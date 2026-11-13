@@ -50,7 +50,7 @@ export function ActionForm({ action, submitLabel, resetOnSuccess, successMessage
       )}
       {state.ok && (
         <p role="status" className="text-sm text-primary">
-          {successMessage ?? t("common.saved")}
+          {state.message ? t(state.message, state.vars) : (successMessage ?? t("common.saved"))}
         </p>
       )}
       <div>

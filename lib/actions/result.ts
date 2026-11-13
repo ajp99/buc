@@ -3,6 +3,9 @@ import type { ZodError } from "zod";
 /** What a form action returns. Messages are i18n keys. */
 export type ActionState = {
   ok?: boolean;
+  /** Success message key, with interpolation vars. */
+  message?: string;
+  vars?: Record<string, string | number>;
   error?: string;
   fieldErrors?: Record<string, string>;
 };
